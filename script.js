@@ -51,11 +51,16 @@ function typeLetter(){
 }
 
 // Music play after countdown
+const music = document.getElementById("bg-music");
+
 function playMusic(){
-  music.volume=0.5;
+  music.volume = 0.5; // volume 50%
   music.play().catch(()=>{
-    document.body.addEventListener("click",()=>{
+    // agar browser autoplay block kare
+    document.body.addEventListener("click", ()=>{
       music.play();
-    },{once:true});
+    }, {once:true}); // ek baar click pe play ho jaye
   });
 }
+
+
