@@ -6,14 +6,8 @@ body {
   text-align: center;
 }
 
-.page {
-  display: none;
-  padding: 50px;
-}
-
-.page.active {
-  display: block;
-}
+.page { display: none; padding: 50px; }
+.page.active { display: block; }
 
 button {
   padding: 10px 25px;
@@ -27,69 +21,19 @@ button {
   font-weight: bold;
 }
 
-/* Countdown Page */
-#countdown {
-  font-size: 3rem;
-  margin-top: 20px;
-}
+/* Countdown */
+#countdown { font-size: 3rem; margin-top: 20px; }
 
-/* Letter Page Layout */
-.letter-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 90%;
-  margin: auto;
-}
+/* Letter Page */
+.letter-layout { display: flex; flex-direction: column; align-items: center; gap: 20px; width: 90%; margin: auto; }
+.letter-photos { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.letter-photos img { width: 30%; min-width: 100px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,0,0,0.3); }
+.letter-text-container { width: 90%; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; font-size: 1.2rem; line-height: 1.5; color: #fff; text-align: justify; }
 
-.letter-photos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
+/* Slideshow */
+#slideshow { width: 70%; max-width: 500px; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.3); }
 
-.letter-photos img {
-  width: 30%;
-  min-width: 100px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-.letter-text-container {
-  width: 90%;
-  padding: 15px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 15px;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: #fff;
-  text-align: justify;
-}
-
-/* Slideshow image */
-#slideshow {
-  width: 70%;
-  max-width: 500px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-
-/* Final Page photos layout */
-.final-photos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.final-photos img {
-  width: 30%;
-  min-width: 150px;
-  max-width: 250px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
+/* Final Page */
+.final-photos { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+.final-photos img { width: 30%; min-width: 150px; max-width: 250px; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.3); }
+.final-text { margin-top: 20px; font-size: 1.3rem; color: #fff; text-align: center; }
