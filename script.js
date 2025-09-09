@@ -63,4 +63,19 @@ function playMusic(){
   });
 }
 
+let timeLeft = 10; // countdown seconds
+const countdownEl = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+  countdownEl.textContent = timeLeft;
+  timeLeft--;
+
+  if(timeLeft < 0){
+    clearInterval(timer);       // countdown stop
+    showPage("wishPage");       // wish page dikha
+    playMusic();                // music start
+  }
+}, 1000);
+
+
 
